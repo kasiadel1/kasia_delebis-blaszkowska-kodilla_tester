@@ -1,10 +1,10 @@
 public class Notebook {
-    int weight;
+    String weight;
     int price;
     int year;
 
 
-    public Notebook(int weight, int price, int year) {
+    public Notebook(String weight, int price, int year) {
         this.price = price;
         this.weight = weight;
         this.year = year;
@@ -25,13 +25,15 @@ public class Notebook {
     }
 
     public void checkWeight() {
-        if (this.weight < 1000) {
+        weight= weight.substring(0,weight.length()-1);
+        int weight1 = Integer.parseInt(weight);
+        if (weight1 < 1000) {
             System.out.println("This notebook is light");
         }
-        if (this.weight > 1000 && this.weight < 3000) {
+        if (weight1 > 1000 && weight1 < 3000) {
             System.out.println("This netbook is not too heavy");
         }
-        if (this.weight > 3100) {
+        if (weight1 > 3100) {
             System.out.println("This notebook is very heavy");
         }
     }
