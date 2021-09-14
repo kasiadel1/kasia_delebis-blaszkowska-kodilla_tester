@@ -19,9 +19,9 @@ public class Application {
 
 
 
-public class Application {
+public class PersonalDetails {
     public static void main(String[] args) {
-        Application adam = new Application("Adam", 40.5, 178);
+        PersonalDetails adam = new PersonalDetails("Adam", 40.5, 178);
 
         System.out.println("Name: " + adam.name);
         System.out.println("Age: " + adam.age);
@@ -32,7 +32,7 @@ public class Application {
     private double age;
     private double height;
 
-    public Application(String name, double age, double height){
+    public PersonalDetails(String name, double age, double height){
         this.name = name;
         this.age = age;
         this.height = height;
