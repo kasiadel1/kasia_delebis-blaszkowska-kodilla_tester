@@ -16,5 +16,9 @@ public class Book {
             return book;
         }
 
+    public static void main(String[] args) {
+   Book dziecieca = Book.of("Jan Brzechwa", "Sto Bajek");
+   Book dorosla = Book.of("Jan Brzechwa", "Opowiadania drastyczne");
 
+    }
     }
