@@ -9,12 +9,12 @@ public class Application {
         operatingSystem.turnOff();
 
 
-        TouchScreen touchScreen= new TouchScreen(2021);
+        Windows touchScreen= new Windows(2021);
         touchScreen.displayYear();
         touchScreen.turnOn();
 
 
-    NoTouchScreen noTouchScreen = new NoTouchScreen(2015);
+    Linux noTouchScreen = new Linux(2015);
     noTouchScreen.tapAndPlay();
     noTouchScreen.turnOff();
     noTouchScreen.displayYear();

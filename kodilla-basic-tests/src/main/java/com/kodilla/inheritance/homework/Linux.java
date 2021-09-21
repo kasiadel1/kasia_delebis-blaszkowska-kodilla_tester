@@ -1,9 +1,9 @@
 package com.kodilla.inheritance.homework;
 
-public class NoTouchScreen extends OperatingSystem {
+public class Linux extends OperatingSystem {
 
 
-    public NoTouchScreen(int yearOfRelease) {
+    public Linux(int yearOfRelease) {
         super(yearOfRelease);
     }
 
@@ -14,6 +14,6 @@ public class NoTouchScreen extends OperatingSystem {
 
 @Override
     public void turnOff(){
-        System.out.println("Sometimes on sometimes off");
+        System.out.println("Linux is off");
     }
 }

@@ -12,11 +12,11 @@ public class OperatingSystem {
     //dodaje metody
 
         public void turnOn () {
-            System.out.println("It's on");
+            System.out.println("System is on");
         }
 
         public void turnOff () {
-            System.out.println("It's off");
+            System.out.println("System is off");
         }
 
 
