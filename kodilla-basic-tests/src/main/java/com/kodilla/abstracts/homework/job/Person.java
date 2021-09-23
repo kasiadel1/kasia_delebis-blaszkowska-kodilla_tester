@@ -20,10 +20,10 @@ public class Person {
         System.out.println("Cook  earns  about  " + cook.salary + " and for his responsibilites belong among others : " + cook.responsibilities);
 
 
-        Manager manager = new Manager(8000," Listening to the , controls waiters");
+        Manager manager = new Manager(8000," Listening to the clients complaints , controls waiters");
         System.out.println("Manager earns about " + manager.salary + " and for his responsibilites belong among others  : " + manager.responsibilities);
 
-        Waiter waiter = new Waiter(3000," Takes orders, cleans tables, entertains clients");
+        Waiter waiter = new Waiter(3000," Taking orders, cleaning tables, entertaining clients");
         System.out.println("Waiter earns about " + waiter.salary + " and  for his responsibilites belong among others : " + manager.responsibilities);
     }
 
