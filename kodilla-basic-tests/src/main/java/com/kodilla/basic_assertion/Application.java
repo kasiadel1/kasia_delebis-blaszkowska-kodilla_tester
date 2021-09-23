@@ -9,29 +9,31 @@ public class Application {
         int sumResult = calculator.sum(a,b);
         int substractResult = calculator.substract(a,b);
         int squaredResult = calculator.squared(a);
-/*boolean correct = ResultChecker.assertEquals(13, sumResult);
-if (correct){
+
+boolean correctSum = ResultChecker.assertEquals(13, sumResult);
+if (correctSum){
     System.out.println("Metoda  sum dziala poprawnie dla liczb "  + a + "i " + b);
 }else{
-    System.out.println(("Metoda  sum nie dziala poprawnie dla liczb "  + a + "i " + b));
-}*/
+    System.out.println("Metoda  sum nie dziala poprawnie dla liczb "  + a + "i " + b);
+}
 
 
-       /* boolean correct = ResultChecker.assertEquals(-3, substractResult);
-        if (correct){
+        boolean correctSub = ResultChecker.assertEquals(-3, substractResult);
+        if (correctSub){
             System.out.println("Metoda  odejmowania  dziala poprawnie dla liczb "  + a + " i " + b);
         }else{
-            System.out.println(("Metoda  odejmowania nie dziala poprawnie dla liczb "  + a + " i " + b));
+            System.out.println("Metoda  odejmowania nie dziala poprawnie dla liczb "  + a + " i " + b);
         }
 
-*/
 
-        boolean correct = ResultChecker.assertEquals(25, squaredResult);
-        if (correct){
+
+        boolean correctSquare = ResultChecker.assertEquals(25, squaredResult);
+        if (correctSquare){
             System.out.println("Metoda  potęgowania  dziala poprawnie dla liczby "  + a );
         }else{
-            System.out.println(("Metoda  potęgowania nie dziala poprawnie dla liczby "  + a ));
+            System.out.println("Metoda  potęgowania nie dziala poprawnie dla liczby "  + a );
         }
+
 
 
 
