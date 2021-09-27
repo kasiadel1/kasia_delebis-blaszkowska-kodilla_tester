@@ -23,15 +23,38 @@ public class CalculatorTestSuite {
             int substractResult = calculator.substract(a, b);
             assertEquals(-3, substractResult);
         }
-//jak tu uwzglednic liczby mniejsze ,wieksze,rowne 0??
-            @Test
-            public void testSqaure1 () {
+// przyd 1 d> 0
+       /*     @Test
+            public void testSquare1 () {
                 Calculator calculator = new Calculator();
                 double d = 5;
                 double square1Result = calculator.squared1(d);
                 assertEquals(25, square1Result, 0.02);
 
-            }
+            }*/
+
+// przyp 2 d<0
+
+    /*@Test
+    public void testSquare1 () {
+        Calculator calculator = new Calculator();
+        double d = -5;
+        double square1Result = calculator.squared1(d);
+        assertEquals(25, square1Result, 0.02);
+
+    }*/
+
+
+    //przyp 3 d=0
+
+    @Test
+    public void testSquare1 () {
+        Calculator calculator = new Calculator();
+        double d = 0;
+        double square1Result = calculator.squared1(d);
+        assertEquals(0, square1Result, 0.02);
+
+    }
 
         }
 
