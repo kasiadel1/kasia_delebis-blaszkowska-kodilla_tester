@@ -25,15 +25,13 @@ public class CarsApplication {
         Random random = new Random();
         int drawCarBrand = random.nextInt(3);
         int speed = random.nextInt(10);
-        int accelerate= random.nextInt(20);
-        int brake = random.nextInt(10) ;
         if (drawCarBrand == 0)
-            return new Audi(speed,accelerate,brake);
+            return new Audi(speed);
 
         else if (drawCarBrand == 1)
-            return new Bmw(speed,accelerate,brake);
+            return new Bmw(speed);
         else
-            return new Ford(speed,accelerate,brake);
+            return new Ford(speed);
     }
 
 
