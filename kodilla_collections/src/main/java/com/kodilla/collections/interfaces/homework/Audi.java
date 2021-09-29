@@ -4,15 +4,9 @@ public class Audi implements Car {
 
 
     int speed;
-    int accelerate;
-    int brake;
 
-
-
-    public Audi(int speed, int accelarate, int brake){
+    public Audi(int speed){
         this.speed = speed;
-        this.accelerate = accelarate;
-        this.brake = brake;
 
 
     }
@@ -20,20 +14,20 @@ public class Audi implements Car {
     public int getSpeed() {
 
 
-        return speed  + increaseSpeed() - decreaseSpeed();
+        return speed ;
     }
 
     @Override
-    public int increaseSpeed() {
+    public void increaseSpeed() {
 
-        return speed + 3* accelerate;
+     speed +=  70;
     }
 
 
     @Override
-    public int decreaseSpeed() {
+    public void decreaseSpeed() {
 
-        return speed + 2 *  brake;
+    speed -= 50;
 
     }
 }

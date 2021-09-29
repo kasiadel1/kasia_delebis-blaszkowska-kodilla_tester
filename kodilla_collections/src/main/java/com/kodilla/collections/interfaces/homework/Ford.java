@@ -4,34 +4,29 @@ public class Ford implements Car {
 
 
     int speed;
-    int accelerate;
-    int brake;
 
-
-    public Ford(int speed, int accelerate, int brake) {
+    public Ford(int speed) {
         this.speed = speed;
-        this.accelerate= accelerate;
-        this.brake = brake;
+
 
     }
     @Override
     public int getSpeed() {
 
 
-        return speed  + increaseSpeed() - decreaseSpeed();
+        return speed ;
     }
 
     @Override
-    public int increaseSpeed() {
-
-        return speed + 3* accelerate;
+    public void increaseSpeed() {
+         speed = speed + 30;
     }
 
 
     @Override
-    public int decreaseSpeed() {
+    public void decreaseSpeed() {
 
-        return speed + 2 *  brake;
+        speed = speed - 20;
 
     }
 }

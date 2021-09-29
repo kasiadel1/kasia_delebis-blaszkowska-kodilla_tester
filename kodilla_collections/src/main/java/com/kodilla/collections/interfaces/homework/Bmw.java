@@ -3,13 +3,10 @@ package com.kodilla.collections.interfaces.homework;
 public class Bmw implements Car{
 
     private int speed;
-    private int accelerate;
-    private int brake;
 
-    public Bmw(int speed, int accelarate, int brake){
+
+    public Bmw(int speed){
         this.speed = speed;
-        this.accelerate = accelarate;
-        this.brake = brake;
 
 
     }
@@ -18,20 +15,20 @@ public class Bmw implements Car{
     public int getSpeed() {
 
 
-        return speed  + increaseSpeed() - decreaseSpeed();
+        return speed ;
     }
 
     @Override
-    public int increaseSpeed() {
+    public void increaseSpeed() {
 
-        return speed + 3* accelerate;
+   speed+=60;
         }
 
 
     @Override
-    public int decreaseSpeed() {
+    public void decreaseSpeed() {
 
-        return speed + 2 *  brake;
+         speed -= 50;
 
     }
 }
