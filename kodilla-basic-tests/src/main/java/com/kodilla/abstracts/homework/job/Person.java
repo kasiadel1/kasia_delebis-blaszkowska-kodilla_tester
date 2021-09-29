@@ -3,19 +3,19 @@ package com.kodilla.abstracts.homework.job;
 
 public class Person {
 
-   public String name;
-   public int age;
-   private Job job;
+public String name;
+public  Job job;
+ public  int age;
 
-    public Person(String name, int age, Job job) {
+    public Person(String name, Job job ,int age) {
         this.name = name;
-        this.age = age;
         this.job = job;
+        this.age = age;
     }
 
     public static void main(String[] args) {
-        Person Anna = new Person("Anna", 23,Waiter) ;
-
+        Job waiter = new Waiter();
+        Person anna = new Person("Anna", waiter, 23) ;
 
     }
 

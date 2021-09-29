@@ -4,7 +4,7 @@ public class Cook extends Job {
 
 
     public Cook() {
-        super(4000, "Cooking, choping veggie , yelling at coworkers in the kitchen");
+        super(40,"Cooking, choping veggie , yelling at coworkers in the kitchen");
 
     }
 
