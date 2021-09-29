@@ -1,12 +1,12 @@
 package com.kodilla.abstracts.homework.job;
 
-public class Waiter extends Job{
 
 
-    public Waiter(double salary, String responsibilities) {
-        super(salary, responsibilities);
+    public class Waiter extends Job {
 
-        this.salary = salary;
-        this.responsibilities = responsibilities;
+       public Waiter() {
+            super(3000, " Taking orders, cleaning tables, entertaining clients");
+        }
     }
-}
+
+

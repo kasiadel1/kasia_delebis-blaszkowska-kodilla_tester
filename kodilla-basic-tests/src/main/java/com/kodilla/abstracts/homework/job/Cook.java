@@ -3,9 +3,9 @@ package com.kodilla.abstracts.homework.job;
 public class Cook extends Job {
 
 
-    public Cook(double salary, String responsibilities) {
-        super(salary, responsibilities);
-        this.salary = salary;
-        this.responsibilities = responsibilities;
+    public Cook() {
+        super(4000, "Cooking, choping veggie , yelling at coworkers in the kitchen");
+
     }
+
 }
