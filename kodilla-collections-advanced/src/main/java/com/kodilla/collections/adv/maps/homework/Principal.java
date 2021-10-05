@@ -3,21 +3,21 @@ package com.kodilla.collections.adv.maps.homework;
 import java.util.Objects;
 
 public class Principal {
-    private String pname;
-    private String psurname;
+    private String name;
+    private String surname;
 
 
-    public Principal(String pname, String psurname) {
-        this.pname = pname;
-        this.psurname = psurname;
+    public Principal(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
     public String getPname() {
-        return pname;
+        return name;
     }
 
     public String getPsurname() {
-        return psurname;
+        return surname;
     }
 
     @Override
@@ -25,19 +25,19 @@ public class Principal {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Principal principal = (Principal) o;
-        return Objects.equals(pname, principal.pname) && Objects.equals(psurname, principal.psurname);
+        return Objects.equals(name, principal.name) && Objects.equals(surname, principal.surname);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(pname, psurname);
+        return Objects.hash(name, surname);
     }
 
     @Override
     public String toString() {
         return "Principal{" +
-                "pname='" + pname + '\'' +
-                ", psurname='" + psurname + '\'' +
+                "pname='" + name + '\'' +
+                ", psurname='" + surname + '\'' +
                 '}';
     }
 }
