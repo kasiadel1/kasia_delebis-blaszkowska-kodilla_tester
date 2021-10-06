@@ -1,6 +1,6 @@
 package com.kodilla.collections.adv.homework;
 
-public class Task {
+public final class Task {
   protected final   String title;
    protected final int duration;
 
