@@ -2,7 +2,9 @@ package com.kodilla.collections.adv.immutable.special.homework;
 
 public class BookApplication {
     public static void main(String[] args) {
-        
+
+
+        Book book4 = BookManager.createBook("To sie nigdy nie uda","Mark Randolph" );
         Book book1 = new Book("Pernament record", "Edward Snowden");
         BookManager.books.add(book1);
         Book book2 = new Book("Finding ultra", "Rich Roll");

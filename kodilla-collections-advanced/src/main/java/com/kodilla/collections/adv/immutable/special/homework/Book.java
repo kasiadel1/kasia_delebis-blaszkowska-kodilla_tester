@@ -12,6 +12,9 @@ public class Book {
     }
 
 
+    public Book(String author) {
+        this.author = author;
+    }
 
     @Override
     public boolean equals(Object o) {
