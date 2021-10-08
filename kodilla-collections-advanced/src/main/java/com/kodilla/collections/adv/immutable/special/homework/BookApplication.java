@@ -13,8 +13,8 @@ public class BookApplication {
         BookManager.books.add(book3);
 
 //Wyswietlamy liste ksiazek i rozmiar zbioru
-        System.out.println("Ksiazki " + BookManager.books);
-        System.out.println("rozmiar kolekcji to " + BookManager.books.size());
+        System.out.println("All books " + BookManager.books);
+        System.out.println("Collection size is :  " + BookManager.books.size());
 
         //porownujemy ksiazki
         System.out.println("do they have the same values");
