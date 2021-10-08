@@ -2,15 +2,24 @@ package com.kodilla.collections.adv.immutable.special.homework;
 
 public class BookApplication {
     public static void main(String[] args) {
+        
+        Book book1 = new Book("Pernament record", "Edward Snowden");
+        BookManager.books.add(book1);
+        Book book2 = new Book("Finding ultra", "Rich Roll");
+        BookManager.books.add(book2);
+        Book book3 = new Book("Finding ultra", "Rich Roll");
+        BookManager.books.add(book3);
 
-Book book1 = BookManager.createBook("To sie nigdy nie uda","Mark Randolph" );
-Book book2 = BookManager.createBook("Pernament record", "Edward Snowden");
-Book book3 = BookManager.createBook("Finding ultra", "Rich Roll");
-Book book4 = BookManager.createBook("Shoe dog", "Phil Knight");
+//Wyswietlamy liste ksiazek i rozmiar zbioru
+        System.out.println("Ksiazki " + BookManager.books);
+        System.out.println("rozmiar kolekcji to " + BookManager.books.size());
 
-         System.out.println(book1 == book2);
-        System.out.println(book1 == book3);
-        System.out.println(book2 == book3);
-        System.out.println(book3 == book4);
+        //porownujemy ksiazki
+        System.out.println("do they have the same values");
+        System.out.println(book2.equals(book3));
+        if (book2.equals(book3)) {
+            System.out.println("Is this the same book?");
+             System.out.println(book2 == book3);
+        }
+        }
     }
-}

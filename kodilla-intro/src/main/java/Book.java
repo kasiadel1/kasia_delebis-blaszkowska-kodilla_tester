@@ -10,7 +10,7 @@ public class Book {
         }
 
         //tworzenie metody of, przyjmujacej stringi i zwracajacej Book
-        public static Book of (String author, String title){
+        public static Book of(String author, String title){
             //tworzenie obiektu Book wewnatrz metody of
             Book book = new Book(author, title);
             return book;
@@ -19,6 +19,7 @@ public class Book {
     public static void main(String[] args) {
    Book dziecieca = Book.of("Jan Brzechwa", "Sto Bajek");
    Book dorosla = Book.of("Jan Brzechwa", "Opowiadania drastyczne");
+        System.out.println(dziecieca.author);
 
     }
     }
