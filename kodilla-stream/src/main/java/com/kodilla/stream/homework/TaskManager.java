@@ -8,12 +8,12 @@ public class TaskManager {
     public static void main(String[] args) {
 
 
-        List<LocalDate> daty = TaskRepository.getTasks()
+        List<LocalDate> unfinished = TaskRepository.getTasks()
                 .stream()
                 .filter(u -> u.getDeadline().isAfter(LocalDate.now()))
                 .map(Task::getDeadline)
                 .collect(Collectors.toList());
-        System.out.println(daty);
+        System.out.println(unfinished);
     }
 
 }
