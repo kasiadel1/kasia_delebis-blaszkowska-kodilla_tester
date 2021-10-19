@@ -3,10 +3,7 @@ package com.kodilla.collections.adv.excercises.homework;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class FlightFinderTests {
 
@@ -25,33 +22,22 @@ public class FlightFinderTests {
             assertEquals(0, flight.findFlightsTo(" ").size());
         }
 
+
+
+
     @Test
-    public void testFindFlightsFromWarsaw() {
-        //given
-        FlightFinder flightFinder = new FlightFinder();
-        //when
-        List<Flight> foundFlights = flightFinder.findFlightsFrom("Warsaw");
-        //then
-        assertNotEquals(0, foundFlights.size());
-        assertNotEquals(1, foundFlights.size());
-        for (Flight flight : foundFlights) {
-            assertEquals("Warsaw", flight.departure);
-        }
+    public void testShowsResultWhenThereIsFlight() {
+
+        FlightFinder flight = new FlightFinder();
+        assertEquals(flight.findFlightsFrom("Gdańsk").size(),1);
     }
 
 
-
     @Test
-    public void testFindFlightsToFrankfurt() {
-        //given
-        FlightFinder flightFinder = new FlightFinder();
-        //when
-        List<Flight> foundFlights = flightFinder.findFlightsTo("Frankfurt");
-        //then
-        assertNotEquals(0, foundFlights.size());
-        for (Flight flight : foundFlights) {
-            assertEquals("Frankfurt", flight.arrival);
-        }
+    public void testShowsResultWhenThereIsFlightTo() {
+
+        FlightFinder flight = new FlightFinder();
+        assertEquals(1, flight.findFlightsTo("Frankfurt").size());
     }
 
     @Test
@@ -62,26 +48,12 @@ public class FlightFinderTests {
     }
 
     @Test
-    public void testIfShowsNoResultWhenThereIsNoFlightFrom() {
+    public void testShowsResultWhenThereIsNoFlightFrom() {
 
         FlightFinder flight = new FlightFinder();
         assertEquals(flight.findFlightsFrom("Luanda").size(),0);
     }
 
-
-    @Test
-    public void testIfShowsNoResultsWhenAirportToIsNull() {
-
-        FlightFinder flight = new FlightFinder();
-        assertEquals(0, flight.findFlightsTo(null).size());
-    }
-
-    @Test
-    public void testIfShowsNoResultsWhenAirportTFromIsNull() {
-
-        FlightFinder flight = new FlightFinder();
-        assertEquals( flight.findFlightsFrom(null).size(),0);
-    }
 }
 
 
