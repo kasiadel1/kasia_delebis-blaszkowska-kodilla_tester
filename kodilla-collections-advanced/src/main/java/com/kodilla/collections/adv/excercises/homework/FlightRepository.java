@@ -14,7 +14,7 @@ public class FlightRepository {
      flightsTable.add(new Flight("Poznań", "Amsterdam"));
      flightsTable.add(new Flight("Warsaw", "Prague"));
      flightsTable.add(new Flight("Cracow","Hague"));
-    // flightsTable.add(new Flight(" "," "));
+     flightsTable.add(new Flight(null, "Amsterdam"));
      return flightsTable;
   }
 
