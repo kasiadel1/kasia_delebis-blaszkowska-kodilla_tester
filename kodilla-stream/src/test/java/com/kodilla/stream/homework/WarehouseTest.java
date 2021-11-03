@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class WarehouseTest {
 
-/*
+
    private Warehouse warehouse = new Warehouse();
 
    @Test
@@ -18,8 +18,7 @@ public class WarehouseTest {
       warehouse.addOrder(new Order("7"));
       Order result = warehouse.getOrder("7");
    }
-*/
- private Warehouse warehouse = new Warehouse();
+
 
    @Test
    public void testIfOrderExists_withException(){
