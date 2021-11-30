@@ -16,7 +16,7 @@ public class GoogleSearch extends AbstractPage {
     @FindBy(css = "input[title='Szukaj']")
     static WebElement inputField;
 
-    @FindBy(css = "input[value='GoogleSearch'']")
+    @FindBy(css = "input[value='Szukaj w Google']")
     static List<WebElement> searchButton;
     private GoogleResults googleResults;
 
