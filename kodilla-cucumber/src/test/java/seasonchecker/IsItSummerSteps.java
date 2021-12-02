@@ -47,7 +47,7 @@ public class IsItSummerSteps implements En {
             this.today = MonthDay.of(8, 23);
         });
 
-        When("I ask whether it's Fizz or Buzz", () -> {
+        When("I ask whether it's Summer", () -> {
             SeasonChecker seasonChecker = new SeasonChecker();
             this.answer = seasonChecker.checkIfSummer(this.today);
         });
