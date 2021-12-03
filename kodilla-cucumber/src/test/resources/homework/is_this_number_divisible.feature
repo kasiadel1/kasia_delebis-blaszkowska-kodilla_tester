@@ -9,7 +9,7 @@ Feature: Is this number divisible by ?
     Then I should be told and <answer>
     Examples:
       | number | answer     |
-      | 27      | "Fizz"     |
+      | 27     | "Fizz"     |
       | 15     | "FizzBuzz" |
       | 25      | "Buzz"     |
       | 13     | "None"     |
