@@ -29,6 +29,11 @@ public class WalletSteps implements En {
             Assert.assertEquals(30, cashSlot.getContents());
         });
 
+            Then("the balance of my walet should be $170", () -> {
+                Assert.assertEquals("Incorrect wallet balance", 170,  wallet.getBalance());
+            });
+
+
 
         When("I request $200", () -> {
             // Write code here that turns the phrase above into concrete actions
