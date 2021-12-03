@@ -29,6 +29,24 @@ public class WalletSteps implements En {
             Assert.assertEquals(30, cashSlot.getContents());
         });
 
+
+        When("I request $200", () -> {
+            // Write code here that turns the phrase above into concrete actions
+            //throw new io.cucumber.java8.PendingException();
+            Cashier cashier = new Cashier(cashSlot);
+            cashier.withdraw(wallet, 200);
+        });
+
+        Then("$200 should be dispensed", () -> {
+            Assert.assertEquals(200, cashSlot.getContents());
+        });
+
+
+
+
+
+
+
         //withdraw exceeds account balance
 
         Given("User's balance is $500", () -> {
