@@ -21,16 +21,15 @@ public class TestGoogle {
     }
 
 
-    @After
-    public void tearDown() {
-        driver.close();
-    }
-
     @Test
     public void testGooglePage() {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
+        googleSearch.RandomSearch(driver);
     }
 
-
+    @After
+   public void tearDown() {
+     driver.close();
+    }
 }
