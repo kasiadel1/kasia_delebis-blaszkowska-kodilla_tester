@@ -25,14 +25,14 @@ public class GoogleResults extends AbstractPage {
 
     }
 
-   public void clickFirst(){
+/*   public void clickFirst(){
         WebElement boxarea = driver.findElement(By.xpath("/html[1]/body[1]/div[7]/div[1]/div[10]"));
         List<WebElement> l1 = boxarea.findElements(By.tagName("a"));
         l1.get(0).click();
         String linkTitle = driver.getTitle();
         System.out.print(" The title of the page is " + linkTitle);
 
-    }
+    }*/
 
 
 

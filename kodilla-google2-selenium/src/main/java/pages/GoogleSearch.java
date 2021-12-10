@@ -28,7 +28,6 @@ public class GoogleSearch extends AbstractPage {
         inputField.click();
         googleResults = loadResults(driver);
         googleResults.iSeeResults();
-        googleResults.clickFirst();
     }
 
     public GoogleResults loadResults(WebDriver driver) {

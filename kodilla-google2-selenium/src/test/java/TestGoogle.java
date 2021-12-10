@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.ClickedPage;
 import pages.GoogleResults;
 import pages.GoogleSearch;
 
@@ -26,6 +27,9 @@ public class TestGoogle {
     public void testGooglePage() {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
+        ClickedPage clickedPage = new ClickedPage(driver);
+        clickedPage.clickFirst();
+
 
     }
     @After
