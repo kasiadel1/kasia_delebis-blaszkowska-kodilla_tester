@@ -3,11 +3,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ClickedPage;
 import pages.GoogleResults;
 import pages.GoogleSearch;
+
+import static org.junit.Assert.assertSame;
 
 
 public class TestGoogle {
@@ -22,16 +24,26 @@ public class TestGoogle {
         driver.findElement(By.id("L2AGLb")).click();
     }
 
-
-    @Test
+    /*@Test
     public void testGooglePage() {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
-        ClickedPage clickedPage = new ClickedPage(driver);
-        clickedPage.clickFirst();
 
+    }*/
 
+        @Test
+        public void testRandomResult() {
+            GoogleSearch googleSearch = new GoogleSearch(driver);
+            googleSearch.searchResults();
+            GoogleResults googleResults = new GoogleResults(driver);
+        WebElement webElement = googleResults.oneRandomResult();
+        ClickedPage resultRandomPage = new ClickedPage(driver);
+
+        WebElement webElement1 = resultRandomPage.clickRandomPage(webElement);
+
+        assertSame(webElement, webElement1);
     }
+
     @After
     public void tearDown() {
         driver.close();
